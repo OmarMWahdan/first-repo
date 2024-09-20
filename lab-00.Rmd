@@ -17,15 +17,15 @@ We set up the data frame. Edit the data below to include information about your 
 
 ```{r setup-tibble}
 team_data <- tibble(
-  name = c("Peter Rabbit", "member 1", "member 2", 
-           "member 3", "member 4"),
-  github_username = c("mcgregors-garden", "username 1", "username 2", 
-                      "username 3", "username 4"), 
-  colour = c("powderblue", "colour 1", "colour 2", 
-             "colour 3", "colour 4"),
-  hobby = c("Hopping", "hobby 1", "hobby 2", 
-            "hobby 3", "hobby 4"),
-  favourite_number = c(2, NA, NA, NA, NA)
+  name = c("joel", " ben", "lilia", 
+           "jamie", "omar"),
+  github_username = c("baron/joe", " benstenton", "omarmwahdan", 
+                      "leilahookway", "jamiekerr06"), 
+  colour = c("forestgreen", "red", "maroon", 
+             "blue", "lightblue"),
+  hobby = c("rugby", "football", "guitar", 
+            "badminton", "football"),
+  favourite_number = c(2, 6, 9, 9, 10)
   )
 
 team_data
@@ -47,19 +47,17 @@ p1
 ```
 
 
-*Remove this text (including the stars), and add your answer for Exercise 18 here.*
-
+plot shows our username by the x axis and by the y axis our favourite number and its a bar graph not in order of ascending numbers as everyone has different favourite nunbers!
 ### Exercises 19
 
 Change the text of the plot title and axis labels.
 
 ```{r labelled-bar-plot}
-p1 + labs(x = "Insert text here", 
-          y = "Insert text here",
-          title = "Insert text here")
+p1 + labs(x = "colour", 
+          y = "numbers",
+          title = "numbers against colours")
 ```
 
-*Remove this text (including the stars), and add your answer for Exercise 19 here.*
 
 ### Exercise 20
 
@@ -69,4 +67,4 @@ p2 <- ggplot(team_data, aes(x = hobby)) +
 p2
 ```
 
-*Remove this text (including the stars) and add your answer for Exercise 20 here.*
+Classifying the groups like musical instruments being together, opendoor sports together, etc. You can see how many people do a sport in a more organised way. You can also see who does sports as a total count. 
